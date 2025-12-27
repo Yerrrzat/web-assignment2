@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>World Profile Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Assignment 2</p>
+        <h1>World Profile Report</h1>
+        <p class="subtitle">Generate a random user and explore their country, currency exchange, and top headlines.</p>
+        <button id="generate-btn" class="primary-btn">Get Random User</button>
+        <p id="status" class="status">Ready when you are.</p>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="panel" id="user-panel">
+        <h2>User Snapshot</h2>
+        <div id="user-card" class="card"></div>
+      </section>
+
+      <section class="panel" id="country-panel">
+        <h2>Country Intelligence</h2>
+        <div class="grid two-col">
+          <div id="country-card" class="card"></div>
+          <div id="exchange-card" class="card"></div>
+        </div>
+      </section>
+
+      <section class="panel" id="news-panel">
+        <h2>Top Headlines</h2>
+        <div id="news-grid" class="news-grid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Data sources: RandomUser, REST Countries, ExchangeRate-API, NewsAPI</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
